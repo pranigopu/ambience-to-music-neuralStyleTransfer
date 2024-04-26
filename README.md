@@ -3,6 +3,9 @@
 # Previous work
 Previous similar project: https://www.youtube.com/watch?v=jmB4IhfGhuY
 
+# Google Colab notebook
+https://drive.google.com/file/d/1NltGH6EDjP2ZkHsMax9aB90_pkpDRFkR/view?usp=sharing
+
 # Model and audio parameters chosen
 ## Model
 - **Type**: Convolutional neural network
