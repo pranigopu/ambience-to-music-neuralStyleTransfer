@@ -1,4 +1,4 @@
-# NOTES FOR NEURAL STYLE TRANSFER FOR AUDIO
+# Ambience-to-Music Neural Style Transfer
 
 # Previous work
 Previous similar project: https://www.youtube.com/watch?v=jmB4IhfGhuY
@@ -6,16 +6,17 @@ Previous similar project: https://www.youtube.com/watch?v=jmB4IhfGhuY
 # Google Colab notebook
 https://drive.google.com/file/d/1NltGH6EDjP2ZkHsMax9aB90_pkpDRFkR/view?usp=sharing
 
-# Model and audio parameters chosen
-## Model
-- **Type**: Convolutional neural network
-- **Purpose**: Genre classification
-- **Input**: Melspectrograms with the following parameters:
+# Model parameters chosen
+- **Model type**: Convolutional neural network
+- **Model purpose**: Genre classification
+- **Model input**: Melspectrograms with the following parameters:
     - Sampling rate: 22050
     - FFT window size: 1024
     - Hop length: 256
     - Number of mel bands: 384
 - **Remarks**: Weights with best validation accuracy during training were chosen
+
+The melspectrogram parameters (apart from sampling rate) were chosen based on the most memory-efficient parameters observed to retain audio quality upon melspectrogram's reconversion, given the sampling rate 22050 Hz. The sampling rate 222050 Hz was chosen because that was the sampling rate of the training audio.
 
 # Key concepts in audio processing
 **_I shall also discuss their relevance to my project where necessary_**.
