@@ -3,8 +3,8 @@
 OUTPUT 1:
 
 - **Name**: `1.wav`
-- **Content**: `CONTENT - Mozart - Alla Turca - Marcus Staab - Chosic.mp3` <br> https://www.chosic.com/download-audio/25957/
-- **Style**: `STYLE - Dark Choir Singing - Pixabay.mp3` <br> https://pixabay.com/sound-effects/dark-choir-singing-16805/
+- **Content**: `CONTENT - Mozart - Alla Turca - Marcus Staab - Chosic.mp3` <br> LINK: https://www.chosic.com/download-audio/25957/
+- **Style**: `STYLE - Dark Choir Singing - Pixabay.mp3` <br> LINK: https://pixabay.com/sound-effects/dark-choir-singing-16805/
 - **Content layers**: 0, 2
 - **Style layers**: 4, 6, 8, 10, 12, 14, 16
 - **Content weight**: 50
@@ -15,8 +15,8 @@ OUTPUT 1:
 OUTPUT 2:
 
 - **Name**: `2.wav`
-- **Content**: `CONTENT - Mozart - Alla Turca - Marcus Staab - Chosic.mp3` <br> https://www.chosic.com/download-audio/25957/
-- **Style**: `STYLE - Dark Choir Singing - Pixabay.mp3` <br> https://pixabay.com/sound-effects/dark-choir-singing-16805/
+- **Content**: `CONTENT - Mozart - Alla Turca - Marcus Staab - Chosic.mp3` <br> LINK: https://www.chosic.com/download-audio/25957/
+- **Style**: `STYLE - Dark Choir Singing - Pixabay.mp3` <br> LINK: https://pixabay.com/sound-effects/dark-choir-singing-16805/
 - **Content layers**: 0, 2, 4
 - **Style layers**: 6, 8, 10, 12, 14, 16
 - **Content weight**: 50
