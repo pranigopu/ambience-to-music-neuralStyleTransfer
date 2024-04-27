@@ -4,10 +4,21 @@ Directory of all the resources used for the project (including media such as ima
 ## Papers/articles referenced
 1.<br>
 
+_For genre classification architectures._
+
 - **Title**: Music Genre Classification: A Comparative Analysis of CNN and XGBoost Approaches with Mel-frequency cepstral coefficients and Mel Spectrograms
 - **Author**: Yigang Meng
 - **Link**: https://arxiv.org/abs/2401.04737
 - **File name**: `Music Genre Classification.pdf`
+
+2.<br>
+
+_The original neural style transfer paper._
+
+- **Title**: A Neural Algorithm of Artistic Style
+- **Authors**: Leon A. Gatys, Alexander S. Ecker and Matthias Bethge
+- **Link**: https://arxiv.org/abs/1508.06576
+- **File name**: `A Neural Algorithm of Artistic Style.pdf`
 
 ## Previous similar work
 1.<br>
