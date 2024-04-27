@@ -34,7 +34,7 @@ _The original neural style transfer paper._
 - **Link**: http://cs230.stanford.edu/projects_spring_2021/reports/76.pdf
 - **File name**: `Audio Style Transfer.pdf`
 
-## Audio for neural style transfer
+## Audio used for neural style transfer
 ### Content audio data
 
 | Name | Artist/Owner | File type | Website |
