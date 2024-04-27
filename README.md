@@ -56,18 +56,71 @@ Flatten | (None, 512) | 0 |
 Dense layer 1 | (None, 64) | 32832 |
 Dense layer 2 | (None, 10) | 650 |
 
-\*For facilitating value-wise comparison
+\* _For facilitating value-wise comparison_
 
-# Key considerations in NST for audio
-Why choose fewer convolutional layers for genre classifier
-    - I want to study the effects of the more fine-grained features (if I have many convolutional layers, the prediction will be based on more high-level, abstract features, preventing me from studying the lower-level features)
-    - Why do I want lower-level features? Because I do not care about accurate genre classification but rather about accurate sound quality and timbre modelling (which is what I want to alter through NST). Hence, if a 3-second segments of a classical piece sounds like jazz due to its sound quality and timbre, I want to treat it as jazz in these respects
-  
-- Why train on 3-second segments instead of longer (e.g. 30-second) segments?
-    - 1: Ambience is more stable for shorter segments, so these is lesser chance of altering content melody during NST
-    - 2: I am focusing on low-level features, so broader abstract qualities of the piece are not of interest
-    - 3: Training data is augmented, thus training quality is improved
+- **Total params**: 62670
+- **Trainable params**: 62604
+- **Non-trainable params**: 66
 
+NOTE: Each convolutional layer has 32 filters, and each max pooling layer has pool size (2, 2) and stride (2, 2).
+
+### Training
+- Training-to-validation split = 9 : 1 (5395 segments : 599 segments)
+- Learning rate (LR) = 0.001 (initially)
+- If validation accuracy fails to rise by at least 0.05 in 2 epochs, LR is halved
+- Training was done for 30 epochs
+
+Results after 30 epochs:
+
+- Training accuracy = 0.9182576537132263 ~ 91.826%
+- Training loss = 0.25373783707618713
+- Validation accuracy = 0.8230383992195129 ~ 93.304%
+- Validation loss = 0.5615319013595581
+
+## Neural style transfer (NST)
+### Inputs and outputs
+The same kind of input as for genre classifier is used (so that genre classifier layers can be used). Output is a set of Mel-spectrogram segments of the same shape that can be stitched together to get the whole piece. The intended output is a piece that combines the timbre, acoustics and texture of the style while retaining the melodic and harmonic structure of the content.
+
+### Data source
+- Ambient sounds for style (free downloads):
+    - https://mixkit.co/free-sound-effects/
+    - https://pixabay.com/sound-effects/
+- Music pieces for content (royalty free):
+    - https://www.chosic.com/free-music/
+
+## Process
+### Inputs to system (user-given)
+- Audio directory
+- Content audio name
+- Style audio name
+- NST parameters, mainly:
+    - Content and style layers
+    - Content and style weights
+    - Number of iterations for NST
+    - Target initialisation (to set initial target as content, style, random or zero)
+
+### Processing of inputs
+
+1. Extracting CNN’s convolutional layers (i.e. feature filters) for style and content <br> **NOTE**: _Hence, we get the "content layers" and "style layers"_
+2. Obtaining Mel-spectrograms for each audio
+3. The above are segmented and reshaped to match the CNN's input shape
+
+### Application of neural model
+The neural model (i.e.the CNN) is applied as follows:
+
+- Content and target are passed to each content layer <br> $\rightarrow$ Each time, layer-wise outputs are passed to content loss function
+- Style and target are passed to each style layer <br> $\rightarrow$ Each time, layer-wise outputs are passed to style loss function
+
+**NOTE**: _The content/style loss obtained for each layer is added to the total loss_
+
+### Output assessment and display
+Based on my goals, a good style transfer is one wherein (1) the melodic and harmonic structure of the content are present in the output, (2) the timbre and acoustics of the style are present in the output such that it is not merely a superposition of two sets of audio data, and (3) the level of noise is minimal. Apart from human-based evaluation, I did not address output assessment (other than total loss), since I did not understand how to quantify my criteria. Output is displayed by reshaping the NST output to a Mel-spectrogram, reconstructing the raw audio signal from the Mel-spectrogram, and displaying an audio player for the raw audio signal.
+
+### User interaction
+Users can input parameters and audio names in input boxes using Google Colab’s GUI system (input instructions are given). Interaction requires either mounting Google Drive with required data or uploading required data to the session storage. The process is end-to-end, so the user need not worry about pre-processing or post-processing.
+
+### Overall process diagram for AM-NST
+![resources/AM-NST Process Diagram.png](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/c194443c53b59232aaf7abd8731ee6ef7f24f348/resources/AM-NST%20Process%20Diagram.png)
 
 # Key concepts in audio processing
 **_I shall also discuss their relevance to my project where necessary_**.
