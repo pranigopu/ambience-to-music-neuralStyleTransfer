@@ -2,18 +2,25 @@
 Directory of all the resources used for the project (including media such as images used in documentation).
 
 ## Papers/articles referenced
-1. 
-    - **Title**: Music Genre Classification: A Comparative Analysis of CNN and XGBoost Approaches with Mel-frequency cepstral coefficients and Mel Spectrograms
-    - **File name**: `Music Genre Classification.pdf`
-    - **Author**: Yigang Meng
-2. 
+1.<br>
 
+- **Title**: Music Genre Classification: A Comparative Analysis of CNN and XGBoost Approaches with Mel-frequency cepstral coefficients and Mel Spectrograms
+- **Author**: Yigang Meng
+- **Link**: https://arxiv.org/abs/2401.04737
+- **File name**: `Music Genre Classification.pdf`
 
-## Previous work
-1. <br>
-    - **Title**: Neural Audio Style Transfer - CMPUT 466
-    - **Link**: https://www.youtube.com/watch?v=jmB4IhfGhuY
-2. wd
+## Previous similar work
+1.<br>
+
+- **Title**: Neural Audio Style Transfer - CMPUT 466
+- **Link**: https://www.youtube.com/watch?v=jmB4IhfGhuY
+
+2.<br>
+
+- **Title**: Audio Style Transfer
+- **Author**: Kevin Lin
+- **Link**: http://cs230.stanford.edu/projects_spring_2021/reports/76.pdf
+- **File name**: `Audio Style Transfer.pdf`
 
 ## Audio for neural style transfer
 ### Content audio data
