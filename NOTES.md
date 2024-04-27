@@ -58,7 +58,7 @@ _Why do I care about timbre?_
 
 I aim to transfer the timbral and acoustic qualities of an ambience-type audio to a musical piece. Hence, I care about timbre and about a model that can - to some extent - model timbral and acoustic qualities of sound and music especially (we shall use a genre classifier to achieve such modelling).
 
-# Notes on tensorflow
+# Notes on Tensorflow
 ## Using `GradientTape` in Tensorflow
 ### Using Tensorflow variables to maintain record of operations under `GradientTape`
 Tensorflow's `GradientTape` record operations on a given set of variables (given within its context) for automatic differentiation. Trainable variables (created by `tensorflow.Variable` or `tensorflow.compat.v1.get_variable`, where `trainable=True` is default in both cases) are automatically watched. Tensors can be manually watched by invoking the watch method on this context manager. Now, note that since `GradientTape` only watches trainable Tensorflow variables, converting the watched variables at any point within `GradientTape`'s context to other data types (e.g. NumPy arrays) erases previous operations, thus erasing resetting its gradient to zero. Needless to say, operations on variables of other data types are not recorded by `GradientTape`, and thus, do not contribute to the gradient's calculation.
