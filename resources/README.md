@@ -2,11 +2,11 @@
 Directory of all the resources used for the project (including media such as images used in documentation).
 
 ## Papers/articles referenced
-1. <br>
+1. 
     - **Title**: Music Genre Classification: A Comparative Analysis of CNN and XGBoost Approaches with Mel-frequency cepstral coefficients and Mel Spectrograms
     - **File name**: `Music Genre Classification.pdf`
     - **Author**: Yigang Meng
-3. <br>
+2. 
 
 
 ## Previous work
