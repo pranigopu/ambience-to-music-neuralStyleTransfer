@@ -65,3 +65,10 @@ Tensorflow's `GradientTape` record operations on a given set of variables (given
 
 ### Use of `tensorflow.GradientTape.watch`
 Tensorflow's `GradientTape` watches all trainable variables under its context by default. However, if I have given the optional argument `watch_accessed_variables` as false (to allow for more fine-grained control over the variables observed, if needed), I have to specify which variables I want `GradientTape` to record operations for, a `tensorflow.GradientTape.watch` function call would be needed. By default, however, the function call is redundant.
+
+> REFERENCE: https://www.tensorflow.org/api_docs/python/tf/GradientTape
+
+### Use of optional argument `persistent=True` in `GradientTape`
+A persistent tape is a tape that can be used multiple times to compute multiple gradients. By default, a tape is not persistent and can only be used once. If I intend to compute the gradient for two variables, so I need a persistent tape.
+
+> REFERENCE: https://www.geeksforgeeks.org/tf-gradienttape-in-tensorflow/
