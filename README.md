@@ -1,7 +1,6 @@
-# Ambience-to-Music Neural Style Transfer (AM-NST)
+# AMBIENCE-TO-MUSIC NEURAL STYLE TRANSFER (AM-NST)
 
-# Google Colab notebook
-https://drive.google.com/file/d/1NltGH6EDjP2ZkHsMax9aB90_pkpDRFkR/view?usp=sharing
+**Google Colab notebook**: <br> https://drive.google.com/file/d/1NltGH6EDjP2ZkHsMax9aB90_pkpDRFkR/view?usp=sharing
 
 # Project overview
 The AI system - Ambience-to-Music Neural Style Transfer (AM-NST) - produces audio reconstructed from a Mel-spectrogram representing some transfer of an ambient audio (style) to a musical audio (content). AM-NST uses the identity and/or convolutional layers of a self-designed, self-trained convolutional neural network (CNN) to compare the Mel-spectrogram of the target audio to the Mel-spectrograms of the content and style audio at different levels of abstraction (each convolutional layer extracts features from the Mel-spectrogram; the deeper the layer, the higher the level of measurement/detail omission, i.e. of abstraction).
