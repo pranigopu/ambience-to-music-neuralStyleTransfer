@@ -86,7 +86,7 @@ The same kind of input as for genre classifier is used (so that genre classifier
 - Music pieces for content (royalty free):
     - https://www.chosic.com/free-music/
 
-## Process
+## Process overview
 ### Overall process diagram for AM-NST
 ![resources/AM-NST Process Diagram.png](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/c194443c53b59232aaf7abd8731ee6ef7f24f348/resources/AM-NST%20Process%20Diagram.png)
 
@@ -103,10 +103,10 @@ The neural model (i.e.the CNN) is applied as follows:
 
 **NOTE**: _The content/style loss obtained for each layer is added to the total loss_
 
-### Output assessment and display
+## Output assessment and display
 Based on my goals, a good style transfer is one wherein (1) the melodic and harmonic structure of the content are present in the output, (2) the timbre and acoustics of the style are present in the output such that it is not merely a superposition of two sets of audio data, and (3) the level of noise is minimal. Apart from human-based evaluation, I did not address output assessment (other than total loss), since I did not understand how to quantify my criteria. Output is displayed by reshaping the NST output to a Mel-spectrogram, reconstructing the raw audio signal from the Mel-spectrogram, and displaying an audio player for the raw audio signal.
 
-### User interaction
+## User interaction
 Users can input parameters and audio names in input boxes using Google Colab's GUI system (input instructions are given). Interaction requires either mounting Google Drive with required data or uploading required data to the session storage. The process is end-to-end, so the user need not worry about pre-processing or post-processing.
 
 ## Evaluation of project outcomes
