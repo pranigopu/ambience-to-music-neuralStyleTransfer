@@ -24,6 +24,7 @@ _The original neural style transfer paper._
 1.<br>
 
 - **Title**: Neural Audio Style Transfer - CMPUT 466
+- **Authors**: Adam Elamy, Cameron Hildebrandt, Fahad Ahammed and Max Melendez 
 - **Link**: https://www.youtube.com/watch?v=jmB4IhfGhuY
 
 2.<br>
