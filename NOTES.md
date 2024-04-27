@@ -1,4 +1,4 @@
-# TECHNICAL AND CONCEPTUAL NOTES
+# TECHNICAL & CONCEPTUAL NOTES
 
 # Key concepts in audio processing
 **_I shall also discuss their relevance to my project where necessary_**.
