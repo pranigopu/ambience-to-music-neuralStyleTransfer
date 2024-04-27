@@ -138,6 +138,6 @@ Using Google Colab, I have provided a sufficiently comprehensive interface that 
 As a final note, I have trained genre-classification CNNs that use MFCCs (Mel-frequency Cepstrum Coefficients), which – I have reason to believe – better capture qualities such as timbre. Using my project’s framework, I tried to combine inferences from Mel-spectrograms (for content) and MFCCs (for style). Although the results were dismal, I think the possibility was worth exploring and can be further explored using my project’s framework. Results can be found in this repository in the file named `NeuralStyleTransferWithUnevenModelling.ipynb`.
 
 > CITATIONS:
-> (In-text: Meng, 2021)
+> (In-text: Meng, 2021) <br>
 > Men, Y. (2021). 'Music Genre Classification: A Comparative Analysis of CNN and XGBoost Approaches with Mel-frequency cepstral coefficients and Mel Spectrograms'. Department of Statistics, University of California.
-> LINK: https://arxiv.org/abs/2401.04737
+> <br> **LINK**: https://arxiv.org/abs/2401.04737
