@@ -79,11 +79,11 @@ Results after 30 epochs:
 The same kind of input as for genre classifier is used (so that genre classifier layers can be used). Output is a set of Mel-spectrogram segments of the same shape that can be stitched together to get the whole piece. The intended output is a piece that combines the timbre, acoustics and texture of the style while retaining the melodic and harmonic structure of the content.
 
 #### Data source
-- Ambient sounds for style (free downloads):
-    - https://mixkit.co/free-sound-effects/
-    - https://pixabay.com/sound-effects/
-- Music pieces for content (royalty free):
-    - https://www.chosic.com/free-music/
+- Free sound effects from Mixkit: https://mixkit.co/free-sound-effects/
+- Sound effects from Pixabay: https://pixabay.com/sound-effects/
+- Free music from Chosic: https://www.chosic.com/free-music/
+
+_Check the README of the_ `resources` _directory in this repository to see the whole list of audio files used for this project (with links)._
 
 ## Process overview
 ### Overall process diagram for AM-NST
