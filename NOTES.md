@@ -11,7 +11,7 @@
 - Hence, hop lengths determine how much consecutive frames overlap
 
 ## Short-time Fourier transfer (STFT)
-The short-time Fourier transform (STFT) is a Fourier-related transform used to determine the sinusoidal frequency and phase content of local sections of a signal (ex. an audio file) as it changes over time. In practice, the procedure for computing STFTs is to divide a longer time signal (ex. a longer audio file) into shorter segments (windows) of equal length and then compute the Fourier transform separately on each shorter segment. Conceptually, we are taking the discrete Fourier transform (DFT) of successive windowed regions of the original signal (note that these regions overlap if the hop length is smaller than the window length).
+The short-time Fourier transform (STFT) is a Fourier-related transform used to determine the sinusoidal frequency and phase content of local sections of a signal (e.g. an audio file) as it changes over time. In practice, the procedure for computing STFTs is to divide a longer time signal (e.g. a longer audio file) into shorter segments (windows) of equal length and then compute the Fourier transform separately on each shorter segment. Conceptually, we are taking the discrete Fourier transform (DFT) of successive windowed regions of the original signal (note that these regions overlap if the hop length is smaller than the window length).
 
 
 > REFERENCES:
