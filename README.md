@@ -87,18 +87,10 @@ The same kind of input as for genre classifier is used (so that genre classifier
     - https://www.chosic.com/free-music/
 
 ## Process
-### Inputs to system (user-given)
-- Audio directory
-- Content audio name
-- Style audio name
-- NST parameters, mainly:
-    - Content and style layers
-    - Content and style weights
-    - Number of iterations for NST
-    - Target initialisation (to set initial target as content, style, random or zero)
+### Overall process diagram for AM-NST
+![resources/AM-NST Process Diagram.png](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/c194443c53b59232aaf7abd8731ee6ef7f24f348/resources/AM-NST%20Process%20Diagram.png)
 
 ### Processing of inputs
-
 1. Extracting CNN’s convolutional layers (i.e. feature filters) for style and content <br> **NOTE**: _Hence, we get the "content layers" and "style layers"_
 2. Obtaining Mel-spectrograms for each audio
 3. The above are segmented and reshaped to match the CNN's input shape
@@ -116,13 +108,3 @@ Based on my goals, a good style transfer is one wherein (1) the melodic and harm
 
 ### User interaction
 Users can input parameters and audio names in input boxes using Google Colab’s GUI system (input instructions are given). Interaction requires either mounting Google Drive with required data or uploading required data to the session storage. The process is end-to-end, so the user need not worry about pre-processing or post-processing.
-
-### Overall process diagram for AM-NST
-![resources/AM-NST Process Diagram.png](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/c194443c53b59232aaf7abd8731ee6ef7f24f348/resources/AM-NST%20Process%20Diagram.png)
-
-> REFERENCE: https://www.tensorflow.org/api_docs/python/tf/GradientTape
-
-### Use of optional argument `persistent=True` in `GradientTape`
-A persistent tape is a tape that can be used multiple times to compute multiple gradients. By default, a tape is not persistent and can only be used once. If I intend to compute the gradient for two variables, so I need a persistent tape.
-
-> REFERENCE: https://www.geeksforgeeks.org/tf-gradienttape-in-tensorflow/
