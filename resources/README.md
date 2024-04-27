@@ -20,20 +20,6 @@ _The original neural style transfer paper._
 - **Link**: https://arxiv.org/abs/1508.06576
 - **File name**: `A Neural Algorithm of Artistic Style.pdf`
 
-## Previous similar work
-1.<br>
-
-- **Title**: Neural Audio Style Transfer - CMPUT 466
-- **Authors**: Adam Elamy, Cameron Hildebrandt, Fahad Ahammed and Max Melendez 
-- **Link**: https://www.youtube.com/watch?v=jmB4IhfGhuY
-
-2.<br>
-
-- **Title**: Audio Style Transfer
-- **Author**: Kevin Lin
-- **Link**: http://cs230.stanford.edu/projects_spring_2021/reports/76.pdf
-- **File name**: `Audio Style Transfer.pdf`
-
 ## Audio used for neural style transfer
 ### Content audio data
 
