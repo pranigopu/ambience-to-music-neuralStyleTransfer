@@ -10,5 +10,6 @@ Note the following:
 - `3x3_1_conv` means 1 convolutional layer (from the top) had $3 \times 3$ kernel and $3 \times 3$ max-pooling size
 - `3x3_2_conv` means 2 convolutional layers (from the top) had $3 \times 3$ kernel and $3 \times 3$ max-pooling size
 - `_withLearningRate` tag indicates that it is a copy of the verbose training outputs with learning rates across epochs
+- The various tags such as `n_fft-1024` indicate the audio parameters used for the input data
 
 The learning rates are relevant because they were set to decay upon reaching a plateau. The plateau condition was checked every 2 epochs.
