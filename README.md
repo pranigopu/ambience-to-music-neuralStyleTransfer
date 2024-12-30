@@ -1,6 +1,6 @@
 # Ambience-to-Music Neural Style Transfer (AM-NST)
 
-> **Google Colab notebook**: [Neural Style Transfer (Basic)](https://drive.google.com/file/d/1NltGH6EDjP2ZkHsMax9aB90_pkpDRFkR/view?usp=sharing) <br>
+> **Google Colab notebook**: [Neural Style Transfer (Basic)](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/main/InterfaceViaGoogleGolab.ipynb) <br>
 > **Technical & conceptual notes**: [NOTES.md](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/27e2f006712c806734d8f87000979e5184fc2852/NOTES.md)
 
 ## Previous similar work
