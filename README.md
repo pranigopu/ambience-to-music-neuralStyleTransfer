@@ -101,7 +101,7 @@ _Check the README of the_ `resources` _directory in this repository to see the w
 
 ## Process overview
 ### Overall process diagram for AM-NST
-![resources/AM-NST Process Diagram.png](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/c194443c53b59232aaf7abd8731ee6ef7f24f348/resources/AM-NST%20Process%20Diagram.png)
+![resources/AM-NST Process Diagram.png](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/main/resources/AM-NST%20Process%20Diagram.png)
 
 ### Processing of inputs
 1. Extracting CNN's convolutional layers (i.e. feature filters) for style and content <br> **NOTE**: _Hence, we get the "content layers" and "style layers"_
@@ -148,7 +148,7 @@ My project explores the potential NST in a specific task, namely the transferrin
 
 Using Google Colab, I have provided a sufficiently comprehensive interface that allows for a high level of customisability and thus experimentation in NST parameters (mainly the content and style layers and weights) and NST loop parameters (e.g. learning rate, decay rate, etc.). It also allows for experimentation using any audio that can be uploaded in the session storage or Google Drive, with many comprehensive and customisable path parameters. The process is also end-to-end, removing the need for any pre-processing or post-processing by the user. The only dependency is the file containing pretrained model weights, which can be easily uploaded and used.
 
-As a final note, I have trained genre-classification CNNs that use MFCCs (Mel-frequency Cepstrum Coefficients), which – I have reason to believe – better capture qualities such as timbre. Using my project’s framework, I tried to combine inferences from Mel-spectrograms (for content) and MFCCs (for style). Although the results were dismal, I think the possibility was worth exploring and can be further explored using my project’s framework. Results can be found in this repository in the file named `NeuralStyleTransferWithUnevenModelling.ipynb`.
+As a final note, I have trained genre-classification CNNs that use MFCCs (Mel-frequency Cepstrum Coefficients), which – I have reason to believe – better capture qualities such as timbre. Using my project’s framework, I tried to combine inferences from Mel-spectrograms (for content) and MFCCs (for style). Although the results were dismal, I think the possibility was worth exploring and can be further explored using my project’s framework. Results can be found in this repository in the Jupyter Notebook [`NeuralStyleTransferWithUnevenModelling.ipynb`](https://github.com/pranigopu/ambience-to-music-neuralStyleTransfer/blob/main/NeuralStyleTransferWithUnevenModelling.ipynb).
 
 **CITATIONS**:
 
