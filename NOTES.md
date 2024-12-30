@@ -16,7 +16,7 @@ The short-time Fourier transform (STFT) is a Fourier-related transform used to d
 
 > REFERENCES:
 > - https://en.wikipedia.org/wiki/Short-time_Fourier_transform
-> - https://sigproc.mit.edu/_static/fall19/lectures/lec09a.pdf
+> - [6.300 Signal Processing (MIT, Signal Processing)](https://sigproc.mit.edu/_static/fall24/lectures/lec01b-handout.pdf)
 
 ## Mel-spectrogram
 The way we hear frequencies in sound is known as 'pitch'. It is a subjective impression of the frequency. So a high-pitched sound has a higher frequency than a low-pitched sound. Humans do not perceive frequencies linearly. We are more sensitive to differences between lower frequencies than higher frequencies. For example, the pair at 100Hz and 200Hz will sound further apart than the pair at 1000Hz and 1100Hz, even if the actual frequency difference between each pair is the same (100 Hz); you will hardly be able to distinguish between the pair at 10000Hz and 10100Hz. However, this may seem less surprising if we realize that the 200Hz frequency is actually the double of 100Hz, whereas the 10100Hz frequency is only 1% higher than the 10000Hz frequency.
